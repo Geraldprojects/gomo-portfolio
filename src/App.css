@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Menu {
+  position: fixed;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+  font-weight: 500;
+}
+.Menu-list li {
+  margin: 20px;
+  cursor: pointer;
+}
+.Menu-logo {
+  margin-right: 5px;
+  height: 40px;
+  width: 35px;
+  cursor: pointer;
+  display: none;
+}
+.Close-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 5px;
+  height: 40px;
+  width: 30px;
+  cursor: pointer;
+  display: none;
+}
+.Menu-list.open {
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 600px) {
+  .Menu-list li {
+    margin: 10px 0;
   }
-  to {
-    transform: rotate(360deg);
+  .Menu-logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+  }
+  .Close-menu.open {
+    display: block;
+  }
+  .Menu-list {
+    display: none;
+  }
+  .Menu-list.open {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    height: 100vh;
+    margin: 25px;
+  }
+  .Menu-list.open li{
+    margin: 25px;
+    padding-bottom: 20px;
+  }
+  .Menu-logo.close{
+    display: none;
   }
 }
