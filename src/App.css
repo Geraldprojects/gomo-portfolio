@@ -73,3 +73,15 @@
     display: none;
   }
 }
+
+@media only screen and (min-width: 601px) {
+
+/*Not sure if it's best practise but fixes the state toggle issue :) */
+  .Menu-list.open{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    font-weight: 500;
+  }
+}
