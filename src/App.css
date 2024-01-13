@@ -4,7 +4,6 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
 }
 
 .Menu-list {
@@ -12,7 +11,8 @@
   display: flex;
   justify-content: flex-end;
   padding-right: 10px;
-  font-weight: bold;
+
+  color: #fff;
 }
 .Menu-list li {
   margin: 20px;
@@ -39,9 +39,12 @@
   display: none;
 }
 
-
-
 @media only screen and (max-width: 600px) {
+  .Menu {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
   .Menu-list li {
     margin: 10px 0;
   }
@@ -65,42 +68,24 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    padding: 10px;
     width: 100%;
-    height: 100vh;
-    margin: 25px;
-    z-index: 99;
-    background-color: #fff;
+    height: 100%;
+    backdrop-filter: blur(14px);
+    color: #fff;
+    font-weight: 300;
   }
-  .Menu-list.open li{
+  .Menu-list.open li {
     margin: 25px;
     padding-bottom: 20px;
   }
-  .Menu-logo.close{
+  .Menu-logo.close {
     display: none;
-  }
-  *,html{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-  }
-  h1{
-    font-size: 1em;
-  }
-  h2,h3{
-    font-size: 1.8em;
-  
-  }
-  p{
-    width: 300px;
   }
 }
 
 @media only screen and (min-width: 601px) {
-
-/*Not sure if it's best practise but fixes the state toggle issue :) */
-  .Menu-list.open{
+  /*Not sure if it's best practise but fixes the state toggle issue :) */
+  .Menu-list.open {
     list-style: none;
     display: flex;
     justify-content: flex-end;
