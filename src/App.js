@@ -1,7 +1,7 @@
-
 import './App.css';
 import Menu from './components/Menu';
-import Home from './components/Home';
+/* import Home2 from './components/Home/Homev2'; */
+import Home from './components/Homev1/Home';
 
 function App() {
   return (
