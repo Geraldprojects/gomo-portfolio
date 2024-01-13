@@ -1,5 +1,5 @@
 import React from "react";
-import ArrowDown from './arrow-down.svg';
+import ArrowDown from './arrow_downward.svg';
 import Styles from './Home2.module.css';
 const Homev2 = () => {
   return (
@@ -14,7 +14,7 @@ const Homev2 = () => {
         </ul>
       </div>
       <div className={Styles.scroller}>
-        <img src={ArrowDown} alt="" />
+        <img className={Styles["ArrowDown"]} src={ArrowDown} alt="" />
       </div>
     </div>
   );
