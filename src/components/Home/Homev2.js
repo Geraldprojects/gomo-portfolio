@@ -8,9 +8,9 @@ const Homev2 = () => {
         <h1>Gomolemo Mpyana</h1>
         <h2>Software Developer</h2>
         <ul>
-          <li>CRM</li>
-          <li>Javascript</li>
-          <li>C#</li>
+          <li>Web</li>
+          <li>Blockchain</li>
+          <li>Salesforce</li>
         </ul>
       </div>
       <div className={Styles.scroller}>
