@@ -41,6 +41,7 @@ h2 {
   height: 30px;
   width: 30px;
   animation: scroller 2s ease infinite;
+  z-index: 0;
 }
 @keyframes scroller {
 	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
