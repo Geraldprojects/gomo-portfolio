@@ -36,12 +36,16 @@ h2 {
   margin-top: auto;
 }
 .scroller {
+  cursor: pointer;
   margin-bottom: 15px;
   height: 30px;
   width: 30px;
+  animation: scroller 2s ease infinite;
 }
-.ArrowDown {
-  fill: #fff;
+@keyframes scroller {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-10px);}
+	60% {transform: translateY(-15px);}
 }
 @media only screen and (max-width: 600px) {
   h1 {
